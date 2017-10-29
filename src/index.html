@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="./css/site.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">       
+    </head>
+    <body>
+        <div class="container">
+            <div class="row"><h1>Html Search Engine</h1></div>
+            <div class="row"><div id="text-to-test">Ba ba apple ca aba </div></div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-9">
+                    <form>
+                        <div class="form-group">
+                            <label for="searchString">Searched string:</label> <input class = "form-control" type="text" id="searchString">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="cases_id" name="cases">Ignore cases</label>      
+                        </div>
+                        <div class="checkbox">
+                            <label for="whole_id"> <input type="checkbox" id="whole_id" name="wholeWords">Match whole words</label>                       
+                        </div>
+                        <button class="form-control btn btn-primary" type="button" id="search-btn" >Search</button> 
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="obj-to-mod"></div>
+                    <div class="round-control" id="ang-control">
+                        <div class="dot" id="dot-control"></div>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <script src="./js/htmlSearchEngine.js"></script>
+        <script src="./js/shadowControl.js"></script>
+    </body>
+</html>
